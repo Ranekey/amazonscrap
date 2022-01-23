@@ -6,7 +6,6 @@ import logging
 
 class AmazonSpiderSpider(scrapy.Spider):
     name = 'amazon'
-    #start_urls = ['https://www.amazon.fr/s?k=chargeur+samsung+45w&rh=p_72%3A437873031&dc&qid=1642861868&rnid=437872031&sprefix=chargeur+samsung+45%2Caps%2C72&ref=sr_nr_p_72_1']
     start_urls = [input("Entre l'url a scrapper ")]
     def parse(self, response):
         products = response.css('.sg-col-inner')
